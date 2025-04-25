@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: ddba189d9c8a9e54c88abdb104849b1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5863433577449654655
+    second: bolinhaFogo_3_0
+  - first:
+      213: 7296414503517271766
+    second: bolinhaFogo_3_1
+  - first:
+      213: 2119423781599853866
+    second: bolinhaFogo_3_2
+  - first:
+      213: 8068447888145290023
+    second: bolinhaFogo_3_3
+  - first:
+      213: 879120389763314093
+    second: bolinhaFogo_3_4
+  - first:
+      213: -7335966146623488745
+    second: bolinhaFogo_3_5
+  - first:
+      213: 6751308948824405409
+    second: bolinhaFogo_3_6
+  - first:
+      213: 8506024278936136281
+    second: bolinhaFogo_3_7
+  - first:
+      213: -2637680653638064398
+    second: bolinhaFogo_3_8
+  - first:
+      213: -2009921599990863797
+    second: bolinhaFogo_3_9
+  - first:
+      213: -8306650570372210973
+    second: bolinhaFogo_3_10
+  - first:
+      213: -7168064113987152126
+    second: bolinhaFogo_3_11
+  - first:
+      213: 483221618668771730
+    second: bolinhaFogo_3_12
+  - first:
+      213: 517698916346864787
+    second: bolinhaFogo_3_13
+  - first:
+      213: 7528732639467575659
+    second: bolinhaFogo_3_14
+  - first:
+      213: -5589415241415335752
+    second: bolinhaFogo_3_15
+  - first:
+      213: 1930434928970166938
+    second: bolinhaFogo_3_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bolinhaFogo_3_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 66
+        width: 131
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f790cfbd5c91f5150800000000000000
+      internalID: 5863433577449654655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 756d43070a7e261429ece11ab5e0147b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bolinhaFogo_3_0: 5863433577449654655
+      bolinhaFogo_3_1: 7296414503517271766
+      bolinhaFogo_3_10: -8306650570372210973
+      bolinhaFogo_3_11: -7168064113987152126
+      bolinhaFogo_3_12: 483221618668771730
+      bolinhaFogo_3_13: 517698916346864787
+      bolinhaFogo_3_14: 7528732639467575659
+      bolinhaFogo_3_15: -5589415241415335752
+      bolinhaFogo_3_16: 1930434928970166938
+      bolinhaFogo_3_2: 2119423781599853866
+      bolinhaFogo_3_3: 8068447888145290023
+      bolinhaFogo_3_4: 879120389763314093
+      bolinhaFogo_3_5: -7335966146623488745
+      bolinhaFogo_3_6: 6751308948824405409
+      bolinhaFogo_3_7: 8506024278936136281
+      bolinhaFogo_3_8: -2637680653638064398
+      bolinhaFogo_3_9: -2009921599990863797
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

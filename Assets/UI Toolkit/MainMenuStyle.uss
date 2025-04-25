@@ -1,0 +1,79 @@
+.header {
+    -unity-text-align: upper-center;
+    font-size: 120px;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Aloha.otf?fileID=12800000&guid=8fb48aff399880c4e8175c918cafe838&type=3#Aloha");
+    -unity-font-style: normal;
+}
+
+.mainmenubutton {
+    -unity-text-align: middle-center;
+    font-size: 50px;
+    -unity-font-style: normal;
+    color: rgb(255, 255, 255);
+    text-overflow: clip;
+    white-space: normal;
+    letter-spacing: 0;
+    -unity-font-definition: url("project://database/Assets/TextMesh%20Pro/Fonts/Nexa%20Regular.otf?fileID=12800000&guid=53199ada2a9a1a84093dde051e3d589e&type=3#Nexa Regular");
+    -unity-text-outline-width: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-image: url("project://database/Assets/UI/Kenney%20Fantasy%20UI%20Borders/PNG/Double/Border/panel-border-010.png?fileID=2800000&guid=325f995846b12c349ad47c6db8704e9f&type=3#panel-border-010");
+    -unity-slice-left: 32;
+    -unity-slice-top: 32;
+    -unity-slice-right: 32;
+    -unity-slice-bottom: 32;
+    -unity-slice-scale: 1.2px;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-position-y: center 0;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.25s;
+    transition-property: all;
+    visibility: visible;
+    overflow: visible;
+    display: flex;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.creditsheader {
+    align-items: center;
+    justify-content: flex-start;
+    align-self: center;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.mainmenubutton:hover {
+    scale: 1.1 1.1;
+    -unity-background-image-tint-color: rgb(188, 188, 188);
+}
+
+.mainmenubutton:focus {
+    scale: 0.9 0.9;
+    -unity-background-image-tint-color: rgb(91, 91, 91);
+}
+
+.creditsnames {
+    font-size: 40px;
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+}
+
+#FirstContainer {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
