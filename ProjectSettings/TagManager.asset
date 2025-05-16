@@ -51,6 +51,9 @@ TagManager:
   - name: Personagem
     uniqueID: 219508499
     locked: 0
+  - name: Player
+    uniqueID: 1317646407
+    locked: 0
   - name: Construcoes
     uniqueID: 2254117313
     locked: 0
