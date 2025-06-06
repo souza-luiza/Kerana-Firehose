@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 351c651ebf195d74d9a22c3afbc2024d
+guid: cf0671bc386ee8d4cab77cf8b1682fa1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6721276000104004274
-    second: mosquinha_nmosca_05_0
+      213: 1240131815028204446
+    second: parada_costas1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 320
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: mosquinha_nmosca_05_0
+      name: parada_costas1_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 24
-        width: 24
-        height: 18
+        x: 159
+        y: 139
+        width: 322
+        height: 372
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e454178b61b39b2a0800000000000000
-      internalID: -6721276000104004274
+      spriteID: e93aa65b055d53110800000000000000
+      internalID: 1240131815028204446
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      mosquinha_nmosca_05_0: -6721276000104004274
+      parada_costas1_0: 1240131815028204446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

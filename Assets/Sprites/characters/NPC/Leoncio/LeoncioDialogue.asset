@@ -16,9 +16,20 @@ MonoBehaviour:
   npcPortrait: {fileID: 6033550288056453372, guid: e83cd48de50726245b1d0a96fbb8f9ef, type: 3}
   dialogueLines:
   - "Ol\xE1, pequena on\xE7a."
-  - "Pode ser que eu precise de voc\xEA."
-  autoProgressLines: 0100
+  - "Voc\xEA poderia me ajudar?"
+  - "Preciso que voc\xEA mate 3 moscas."
+  - "Elas est\xE3o localizadas ao leste."
+  - Tudo bem.
+  - "Talvez na pr\xF3xima, ent\xE3o."
+  autoProgressLines: 010001000100
+  endDialoguesLines: 000000010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 0a54d4c26cb057446b156ca756ac084b, type: 3}
   voicePitch: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Sim
+    - "N\xE3o"
+    nextDialogueIndexes: 0200000004000000
