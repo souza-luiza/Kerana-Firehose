@@ -3,6 +3,7 @@
   <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
   <xs:include schemaLocation="GlobalNamespace.xsd" />
   <xs:import schemaLocation="UnityEditor.ShaderGraph.Drawing.xsd" namespace="UnityEditor.ShaderGraph.Drawing" />
+  <xs:import schemaLocation="UnityEditor.Sequences.xsd" namespace="UnityEditor.Sequences" />
   <xs:import schemaLocation="UnityEditor.Rendering.xsd" namespace="UnityEditor.Rendering" />
   <xs:import schemaLocation="UnityEditor.Tilemaps.xsd" namespace="UnityEditor.Tilemaps" />
   <xs:import schemaLocation="UnityEditor.Tilemaps.External.xsd" namespace="UnityEditor.Tilemaps.External" />
