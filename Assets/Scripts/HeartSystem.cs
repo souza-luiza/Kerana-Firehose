@@ -12,6 +12,9 @@ public class HeartSystem : MonoBehaviour
 
     public string scene;
 
+    private bool isDead;
+    public GameManagerScript gameManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -53,8 +56,10 @@ public class HeartSystem : MonoBehaviour
 
     void DeadState()
     {
-        if(vida <= 0)
+        if(vida <= 0 && !isDead)
         {
+            isDead = true;
+            gameManager.GameOver();
             GetComponent<PlayerController>().enabled = false;
             //Destroy(gameObject, 1.0f);
             vida = vidaMaxima;
