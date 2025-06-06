@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: LeoncioDialogue
+  m_EditorClassIdentifier: 
+  npcName: "Le\xF4ncio"
+  npcPortrait: {fileID: 6033550288056453372, guid: e83cd48de50726245b1d0a96fbb8f9ef, type: 3}
+  dialogueLines:
+  - "Ol\xE1, pequena on\xE7a."
+  - "Pode ser que eu precise de voc\xEA."
+  autoProgressLines: 0100
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 0a54d4c26cb057446b156ca756ac084b, type: 3}
+  voicePitch: 1
