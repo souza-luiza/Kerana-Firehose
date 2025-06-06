@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vitoria04_0: -669448834025656868
+      vitoria04_1: 6794801846714246017
+      vitoria04_2: 8527771349717890538
+      vitoria04_3: -8954905763157428197
+      vitoria04_4: -6989974236709169892
+      vitoria04_5: 1054163148545153464
+      vitoria04_6: 1847687971712860367
+      vitoria04_7: -4863661491873848519
+      vitoria04_8: -4456522524257353164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

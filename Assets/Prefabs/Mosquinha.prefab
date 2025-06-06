@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4602be29b5523d41877351490576775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeedMosquinha: 3
+  _moveSpeedMosquinha: 2
   _detectionArea: {fileID: 207791837247646329}
 --- !u!58 &1010983543914577893
 CircleCollider2D:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidas: 3
-  animator: {fileID: 0}
+  animator: {fileID: 368965255629340973}
 --- !u!1 &8985560487506617283
 GameObject:
   m_ObjectHideFlags: 0

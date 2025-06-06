@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private bool playingFootsteps = false;
     public float footstepSpeed = 0.5f;
+
+    public Transform Aim;
+    bool isWalking = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,24 +33,36 @@ public class PlayerMovement : MonoBehaviour
         }
         rb.linearVelocity = moveInput * moveSpeed;
         animator.SetBool("isWalking", rb.linearVelocity.magnitude > 0);
+        if (isWalking)
+        {
+            Vector3 vector3 = Vector3.left * moveInput.x + Vector3.down * moveInput.y;
+            Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
+        }
 
         if (rb.linearVelocity.magnitude > 0 && !playingFootsteps)
-        {
-            StartFootsteps();
-        }
-        else if (rb.linearVelocity.magnitude == 0)
-        {
-            StopFootsteps();
-        }
+            {
+                StartFootsteps();
+            }
+            else if (rb.linearVelocity.magnitude == 0)
+            {
+                StopFootsteps();
+            }
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         if (context.canceled)
         {
+            isWalking = false;
             animator.SetBool("isWalking", false);
             animator.SetFloat("LastInputX", moveInput.x);
             animator.SetFloat("LastInputY", moveInput.y);
+            Vector3 vector3 = Vector3.left * moveInput.x + Vector3.down * moveInput.y;
+            Aim.rotation = Quaternion.LookRotation(Vector3.forward, vector3);
+        }
+        else if (rb.linearVelocity.magnitude > 0)
+        {
+            isWalking = true;
         }
 
         moveInput = context.ReadValue<Vector2>();
