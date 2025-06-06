@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
@@ -18,5 +19,20 @@ public class GameManagerScript : MonoBehaviour
     public void GameOver()
     {
         gameOverUI.SetActive(true);
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void quit()
+    {
+        Application.Quit();
     }
 }

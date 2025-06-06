@@ -337,7 +337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 170024532}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2084530141}
+        m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
+        m_MethodName: quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &170024532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,7 +681,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734469908}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2084530141}
+        m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
+        m_MethodName: restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734469908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4954,7 +4978,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 958694415}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2084530141}
+        m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
+        m_MethodName: MainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &958694415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8412,7 +8448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00024414062, y: 0.000061035156}
+  m_AnchoredPosition: {x: 0.00024414062, y: 0}
   m_SizeDelta: {x: 178.14, y: 157.62}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625663608
@@ -9587,6 +9623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b01fe2233d4c5164da6a9748fd47e4b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 1625663606}
 --- !u!4 &2084530142
 Transform:
   m_ObjectHideFlags: 0
@@ -9643,6 +9680,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3082687273578643656, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: Vida
+      value: 
+      objectReference: {fileID: 2109158448}
+    - target: {fileID: 3082687273578643656, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: fase
       value: 3
       objectReference: {fileID: 0}
@@ -9678,6 +9719,10 @@ PrefabInstance:
       propertyPath: scene
       value: Fase3_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5800714382861832103, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2084530141}
     - target: {fileID: 5800714382861832103, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: 'coracao.Array.data[0]'
       value: 
@@ -9771,6 +9816,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1675528718838692471, guid: b1541f8177420484f8ce833af739283a, type: 3}
   m_PrefabInstance: {fileID: 2109158446}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2109158448 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5800714382861832103, guid: b1541f8177420484f8ce833af739283a, type: 3}
+  m_PrefabInstance: {fileID: 2109158446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143c888ac69491b4e9fc4576a242045f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
