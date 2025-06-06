@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class PlayerController : MonoBehaviour
 {
@@ -19,7 +20,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject _playerFogo;
     public Transform _playerLocalDisparo;
-    
+
+    private bool isDead = false;
+
+    public HeartSystem Vida;
+
     void Start()
     {
         _playerRigidbody2D = GetComponent<Rigidbody2D>();
@@ -42,7 +47,13 @@ public class PlayerController : MonoBehaviour
     {
         _playerDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-        if(_playerDirection.x > 0)
+        if ( Vida.vida<= 0  && !isDead)
+        {
+            _playerAnimator.SetInteger("Movimento", 0);
+            return;
+        }
+
+        if (_playerDirection.x > 0)
         {
             this.direcaoMovimento = DirecaoMovimento.Direita;
         }
