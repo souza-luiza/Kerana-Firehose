@@ -14,24 +14,30 @@ public class DomClaudioController : MonoBehaviour
 
     private bool Cima = true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    // Adicione estas variáveis para a sequência de imagens
+    public GameObject[] vitorias; // Arraste os GameObjects vitoria0 até vitoria12 no Inspector
+    private int indiceVitoria = 0;
+    private float tempoEntreVitorias = 0.2f; // tempo entre cada imagem
+    private float tempoVitoriaAtual = 0f;
+    private bool mostrandoVitoria = false;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         HealthLogic();
         AtirarFogo();
         Movimentar();
         DeadState();
+        SequenciaVitoria();
     }
 
     void HealthLogic()
     {
-        if(vidas>vidaMax)
+        if (vidas > vidaMax)
         {
             vidas = vidaMax;
         }
@@ -39,33 +45,58 @@ public class DomClaudioController : MonoBehaviour
 
     void DeadState()
     {
-        if(vidas <= 0)
+        if (vidas <= 0 && !mostrandoVitoria)
         {
             GetComponent<DomClaudioController>().enabled = false;
-            Destroy(gameObject, 1.0f);
+            mostrandoVitoria = true;
+            indiceVitoria = 0;
+            tempoVitoriaAtual = 0f;
+            if (vitorias.Length > 0)
+            {
+                for (int i = 0; i < vitorias.Length; i++)
+                    vitorias[i].SetActive(false);
+                vitorias[0].SetActive(true);
+            }
+            Destroy(gameObject, (vitorias.Length * tempoEntreVitorias) + 0.5f);
+        }
+    }
+
+    void SequenciaVitoria()
+    {
+        if (mostrandoVitoria && vitorias.Length > 0)
+        {
+            tempoVitoriaAtual += Time.deltaTime;
+            if (tempoVitoriaAtual >= tempoEntreVitorias && indiceVitoria < vitorias.Length - 1)
+            {
+                vitorias[indiceVitoria].SetActive(false);
+                indiceVitoria++;
+                vitorias[indiceVitoria].SetActive(true);
+                tempoVitoriaAtual = 0f;
+            }
         }
     }
 
     private void AtirarFogo()
     {
         tempoAtualDisparos -= Time.deltaTime;
-        if(tempoAtualDisparos <= 0)
+        if (tempoAtualDisparos <= 0)
         {
             Instantiate(DomClaudioFogo, DomClaudioLocalDisparo.position, Quaternion.Euler(0f, 0f, -90f));
             tempoAtualDisparos = tempoMaxEntreDisparos;
         }
     }
+
     private void Movimentar()
     {
         float direcao;
-        if(Cima)
+        if (Cima)
         {
             direcao = 1;
-        } 
+        }
         else
         {
             direcao = -1;
-        }  
+        }
         transform.Translate(Vector3.up * velocidadeClaudio * direcao * Time.deltaTime);
         if (transform.position.y >= -26f)
         {
