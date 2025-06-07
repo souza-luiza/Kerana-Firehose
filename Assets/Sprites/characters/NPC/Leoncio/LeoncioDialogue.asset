@@ -21,8 +21,11 @@ MonoBehaviour:
   - "Elas est\xE3o localizadas ao leste."
   - Tudo bem.
   - "Talvez na pr\xF3xima, ent\xE3o."
-  autoProgressLines: 010001000100
-  endDialoguesLines: 000000010001
+  - Estou na espera das moscas.
+  - Obrigado por matar as moscas!
+  - Poderemos viver um pouco melhor agora...
+  autoProgressLines: 010001000100000100
+  endDialoguesLines: 000000010001010001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 0a54d4c26cb057446b156ca756ac084b, type: 3}
@@ -33,3 +36,7 @@ MonoBehaviour:
     - Sim
     - "N\xE3o"
     nextDialogueIndexes: 0200000004000000
+    givesQuest: 0100
+  questInProgressIndex: 6
+  questCompletedIndex: 7
+  quest: {fileID: 11400000, guid: 5ec9bf4a61353b24ab860901a35f73fc, type: 2}

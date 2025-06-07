@@ -18,9 +18,9 @@ public class PlayerHealth : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Inimigo enemy = collision.GetComponent<Inimigo>();
+        Inimigo enemy = collision.gameObject.GetComponent<Inimigo>();
         if (enemy)
         {
             TakeDamage(1); //ou mudar para enemy.damage

@@ -12,19 +12,19 @@ public class Inimigo : MonoBehaviour
 
     public void ReceberDano()
     {
-        this.vidas--;
-        Debug.Log(this.name + " recebeu dano. Vida: " + this.vidas);
-        if(this.vidas==0)
+        vidas--;
+        Debug.Log(name + " recebeu dano. Vida: " + this.vidas);
+        if(vidas<=0)
         {
             //Derrotado
-            this.animator.SetBool("Morte", true);
+            animator.SetBool("Morte", true);
             Destroy(gameObject, 0.6f);
             onDeathCallback?.Invoke();
         }
-        else if(this.gameObject.tag=="Mosquinha")
+        else if(gameObject.tag=="Mosquinha")
         {
             //Recebeu dano
-            this.animator.SetTrigger("Dano");
+            animator.SetTrigger("Dano");
         }
     }
 
