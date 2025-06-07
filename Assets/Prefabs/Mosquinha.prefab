@@ -206,6 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidas: 3
   animator: {fileID: 368965255629340973}
+  ID: 1
 --- !u!1 &8985560487506617283
 GameObject:
   m_ObjectHideFlags: 0
