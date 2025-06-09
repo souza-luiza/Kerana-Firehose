@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Inimigo : MonoBehaviour
@@ -8,27 +9,32 @@ public class Inimigo : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
-    private System.Action onDeathCallback;
+    private Action onDeathCallback;
+
+    public string ID;
 
     public void ReceberDano()
     {
-        this.vidas--;
-        Debug.Log(this.name + " recebeu dano. Vida: " + this.vidas);
-        if(this.vidas==0)
+        vidas--;
+        Debug.Log(name + " recebeu dano. Vida: " + vidas);
+        if (vidas <= 0)
         {
             //Derrotado
-            this.animator.SetBool("Morte", true);
+            animator.SetBool("Morte", true);
             Destroy(gameObject, 0.6f);
             onDeathCallback?.Invoke();
+
+            //Adicionar uma morte
+            QuestController.Instance.EnemyKilled(ID);
         }
-        else if(this.gameObject.tag=="Mosquinha")
+        else if (gameObject.CompareTag("Mosquinha"))
         {
             //Recebeu dano
-            this.animator.SetTrigger("Dano");
+            animator.SetTrigger("Dano");
         }
     }
 
-    public void SetOnDeathCallback(System.Action callback)
+    public void SetOnDeathCallback(Action callback)
     {
         onDeathCallback = callback;
     }
