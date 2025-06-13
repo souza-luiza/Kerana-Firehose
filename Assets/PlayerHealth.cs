@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -7,6 +9,12 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
 
     public HealthUI healthUI;
+
+    public GameManagerScript gameManager;
+
+    private bool isDead;
+
+    public GameObject gameOverUI;
 
     private SpriteRenderer spriteRenderer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +24,19 @@ public class PlayerHealth : MonoBehaviour
         healthUI.SetMaxHearts(maxHealth);
 
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {   
+        healthUI.UpdateHearts(currentHealth);
+
+        // Aqui você pode adicionar lógica para verificar se o jogador morreu
+        if (currentHealth <= 0 && isDead)
+        {
+            isDead = true;
+            gameManager.gameOver();
+            Debug.Log("Dead");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -46,4 +67,6 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         spriteRenderer.color = Color.white;
     }
+
+   
 }
