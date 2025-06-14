@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 170024531}
   m_Layer: 5
   m_Name: Quit
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -682,9 +682,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084530141}
+      - m_Target: {fileID: 2084530140}
         m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
-        m_MethodName: restart
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4910,7 +4910,7 @@ GameObject:
   - component: {fileID: 958694414}
   m_Layer: 5
   m_Name: Menu
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8224,7 +8224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
+  m_IgnoreReversedGraphics: 0
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
@@ -8834,7 +8834,7 @@ GameObject:
   - component: {fileID: 1820260037}
   m_Layer: 5
   m_Name: Text (TMP)
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9676,8 +9676,16 @@ PrefabInstance:
       value: -31.56
       objectReference: {fileID: 0}
     - target: {fileID: 2941629257018651106, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941629257018651106, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2941629257018651106, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1317646407
       objectReference: {fileID: 0}
     - target: {fileID: 3082687273578643656, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: Vida

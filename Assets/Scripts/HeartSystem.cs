@@ -59,7 +59,7 @@ public class HeartSystem : MonoBehaviour
         if(vida <= 0 && !isDead)
         {
             isDead = true;
-            gameManager.GameOver();
+            gameManager.gameOver();
             GetComponent<PlayerController>().enabled = false;
             //Destroy(gameObject, 1.0f);
             vida = vidaMaxima;

@@ -4,48 +4,53 @@ using UnityEngine.SceneManagement;
 public class GameManagerScript : MonoBehaviour
 {
     public GameObject gameOverUI;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        Cursor.visible = false; // Hide the cursor
-        Cursor.lockState = CursorLockMode.Locked; // Lock the cursor to the center of the screen
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(gameObject.activeInHierarchy)
+        // Garante que a UI de game over comece desativada
+        if (gameOverUI != null)
         {
-            Cursor.visible = true; // Hide the cursor
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Cursor.visible = false; // Hide the cursor
-            Cursor.lockState = CursorLockMode.Locked;
+            gameOverUI.SetActive(false);
         }
 
+        // Esconde e trava o cursor para o início do jogo
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
+
+    // A função Update() não é necessária para controlar o cursor neste caso.
+    // A lógica de mostrar/esconder o cursor será ativada apenas quando o jogo terminar.
 
     public void gameOver()
     {
-        gameOverUI.SetActive(true);
+        if (gameOverUI != null)
+        {
+            // Ativa a tela de Game Over
+            gameOverUI.SetActive(true);
+
+            // Mostra e desbloqueia o cursor para que o jogador possa clicar nos botões
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void restart()
     {
+        // Recarrega a cena atual
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Debug.Log("Restart");
     }
 
     public void MainMenu()
     {
+        // Carrega a cena do Menu Principal (certifique-se de que "MainMenu" existe nas suas Build Settings)
         SceneManager.LoadScene("MainMenu");
-       Debug.Log("Main Menu");
+        Debug.Log("Main Menu");
     }
 
     public void quit()
     {
+        // Fecha o jogo
         Application.Quit();
         Debug.Log("Quit Game");
     }
