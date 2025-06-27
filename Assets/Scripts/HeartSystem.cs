@@ -62,8 +62,8 @@ public class HeartSystem : MonoBehaviour
             gameManager.gameOver();
             GetComponent<PlayerController>().enabled = false;
             //Destroy(gameObject, 1.0f);
-            vida = vidaMaxima;
-            UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
+            //vida = vidaMaxima;
+            //UnityEngine.SceneManagement.SceneManager.LoadScene(scene);
         }
     }
 }

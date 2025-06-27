@@ -54,6 +54,9 @@ TagManager:
   - name: Collision
     uniqueID: 3906129905
     locked: 0
+  - name: Inimigo
+    uniqueID: 4050010193
+    locked: 0
   - name: Player
     uniqueID: 1317646407
     locked: 0

@@ -682,9 +682,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2084530140}
+      - m_Target: {fileID: 2084530141}
         m_TargetAssemblyTypeName: GameManagerScript, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -741,7 +741,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734529486}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LocalDisparo
   m_TagString: Untagged
   m_Icon: {fileID: 4162164826716764455, guid: 0000000000000000d000000000000000, type: 0}
@@ -9435,8 +9435,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 219508499
-  m_SortingLayer: 0
+  m_SortingLayerID: -244957103
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 464934252295000733, guid: fbf111d3e54488b4493236cb341f1906, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9696,6 +9696,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3082687273578643656, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: _isAttack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3082687273578643656, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: _playerFogo
       value: 
       objectReference: {fileID: 8390887088263814644, guid: 5bdfa60de77fa6d41a1e9dc1483f186e, type: 3}
@@ -9802,6 +9806,10 @@ PrefabInstance:
     - target: {fileID: 6476620201511700964, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903815296077141283, guid: b1541f8177420484f8ce833af739283a, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 7937770406144915173, guid: b1541f8177420484f8ce833af739283a, type: 3}
       propertyPath: fase
