@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf76fc6f8feed64eba519af9062badf, type: 3}
+  m_Name: Fogo
+  m_EditorClassIdentifier: 
+  questID: Fogo1dc46d6c-7d1a-4a4f-936d-41e6c1709e9c
+  questName: Fogo
+  description: Encontre as bolas de fogo
+  objectives:
+  - objectiveID: 12
+    description: Encontre uma bola de fogo
+    type: 0
+    requiredAmount: 4
+    currentAmount: 0
+  questRewards:
+  - type: 1
+    rewardID: 0
+    amount: 0
