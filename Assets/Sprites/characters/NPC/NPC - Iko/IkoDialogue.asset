@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: IkoDialogue
+  m_EditorClassIdentifier: 
+  npcName: Iko
+  npcPortrait: {fileID: 21300000, guid: 09da44d94abbdc54aadfc76c5fc9585e, type: 3}
+  dialogueLines:
+  - "Ei, quer uma miss\xE3o para te dar mais vida?"
+  - "Encontre as partes de um cora\xE7\xE3o, ent\xE3o!"
+  - "A perda \xE9 sua."
+  - "N\xE3o encontrou ainda?"
+  - Espero que te ajude.
+  autoProgressLines: 
+  endDialoguesLines: 0001010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 8f5cd9a89b6ca284d9e9fa6a2e94c1e3, type: 3}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 0
+    choices:
+    - Sim
+    - "N\xE3o"
+    nextDialogueIndexes: 0100000002000000
+    givesQuest: 0100
+  questInProgressIndex: 3
+  questCompletedIndex: 4
+  quest: {fileID: 11400000, guid: 98fecdf2e59c5a746a5f4e63378e23c0, type: 2}

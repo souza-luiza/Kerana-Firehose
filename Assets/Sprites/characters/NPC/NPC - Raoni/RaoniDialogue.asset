@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: RaoniDialogue
+  m_EditorClassIdentifier: 
+  npcName: Raoni
+  npcPortrait: {fileID: 21300000, guid: 040e9d51ac2ed6b4ba50293444f725d4, type: 3}
+  dialogueLines:
+  - "Ol\xE1..."
+  - "Aceita uma miss\xE3o, jovem?"
+  - "Se voc\xEA me arranjar uma moeda, te dou algo legal que encontrei."
+  - "T\xE1 bom, n\xE9."
+  - "Ainda n\xE3o achou?"
+  - "Espero que voc\xEA ache uma utilidade para isso."
+  autoProgressLines: 010000000000
+  endDialoguesLines: 000001010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 2af4eed30ff5dbc49b3d15a4169e9699, type: 3}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 1
+    choices:
+    - Sim
+    - "N\xE3o"
+    nextDialogueIndexes: 0200000003000000
+    givesQuest: 0100
+  questInProgressIndex: 4
+  questCompletedIndex: 5
+  quest: {fileID: 11400000, guid: 6e6be8b29c58c0349a24ff732bb259e0, type: 2}

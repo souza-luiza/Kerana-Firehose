@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: FeiticeiroDialogue
+  m_EditorClassIdentifier: 
+  npcName: Feiticeiro
+  npcPortrait: {fileID: 21300000, guid: 0fac4ba5914b90541ab3ec975d958699, type: 3}
+  dialogueLines:
+  - "Ei, voc\xEA n\xE3o ir\xE1 conseguir derrot\xE1-lo"
+  - "A menos que voc\xEA tenha o poder do fogo"
+  - "Aceita consegu\xED-lo?"
+  - Encontre 4 bolas de fogos
+  - "Est\xE3o espalhadas pelo mapa"
+  - "Boa derrota, ent\xE3o."
+  - "Voc\xEA consegue!"
+  - "Boa sorte, acredito em voc\xEA!"
+  autoProgressLines: 0101000100000000
+  endDialoguesLines: 0000000001010101
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: 072b6cf5e1df2104387a6c8b470c3bc9, type: 3}
+  voicePitch: 1
+  choices:
+  - dialogueIndex: 2
+    choices:
+    - Sim
+    - "N\xE3o"
+    nextDialogueIndexes: 0300000005000000
+    givesQuest: 0100
+  questInProgressIndex: 6
+  questCompletedIndex: 7
+  quest: {fileID: 11400000, guid: 5adf8bace2b8e864baf2d6f6c98239f6, type: 2}
