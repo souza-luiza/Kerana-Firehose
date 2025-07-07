@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 422299535, guid: 1518e6c2ff2c907449e16e506cb41c56, type: 3}
+    - target: {fileID: 3834754319899858511, guid: 3083651419b38e942a439c2765d7a88f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 422299535, guid: 1518e6c2ff2c907449e16e506cb41c56, type: 3}
     - target: {fileID: 6793473790368087434, guid: 3083651419b38e942a439c2765d7a88f, type: 3}
       propertyPath: m_Name
       value: 3LancaItem Variant
