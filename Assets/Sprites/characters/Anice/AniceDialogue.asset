@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: AniceDialogue
+  m_EditorClassIdentifier: 
+  npcName: Anice
+  npcPortrait: {fileID: 21300000, guid: f138acb81a4ac1d49872f2985b9f8973, type: 3}
+  dialogueLines:
+  - "Ol\xE1, Kerana"
+  - "Voc\xEA n\xE3o imagina quem \xE9 o real culpado, n\xE9?"
+  - "Dom Cl\xE1udio causou tudo isso."
+  - "Eu sei a localiza\xE7\xE3o dele."
+  - "\xC9 s\xF3 voc\xEA subir naquele portal."
+  autoProgressLines: 0101010100
+  endDialoguesLines: 0000000001
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: bfee90e1f958ce54891977c8b34db58b, type: 3}
+  voicePitch: 1
+  choices: []
+  questInProgressIndex: 0
+  questCompletedIndex: 0
+  quest: {fileID: 0}
