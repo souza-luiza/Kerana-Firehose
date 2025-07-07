@@ -8,17 +8,18 @@ TagManager:
   - Musgo
   - DomClaudio
   - PoderClaudio
+  - Item
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ataque
   - Water
   - UI
-  - Inimigo
+  - PlayerBody
   - 
-  - Blocking
-  - Personagem
+  - 
+  - 
   - 
   - 
   - 
@@ -53,9 +54,6 @@ TagManager:
     locked: 0
   - name: Collision
     uniqueID: 3906129905
-    locked: 0
-  - name: Inimigo
-    uniqueID: 4050010193
     locked: 0
   - name: Player
     uniqueID: 1317646407
