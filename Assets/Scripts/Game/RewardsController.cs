@@ -14,6 +14,7 @@ public class RewardsController : MonoBehaviour
     private Weapon weapon;
     [SerializeField]
     private FogoPlayer fogoPlayer;
+    public GameObject howToFireScreen;
 
     private void Awake()
     {
@@ -32,13 +33,15 @@ public class RewardsController : MonoBehaviour
                 case RewardType.Item:
                     GiveItemReward(reward.rewardID, reward.amount);
                     break;
-                case RewardType.Gold:
+                case RewardType.Gold: //habilidade de fogo
                     fogoPlayer.enabled = true;
+                    howToFireScreen.SetActive(true);
+                    PauseController.SetPause(true);
                     break;
-                case RewardType.Experience: //adicionar 1 coracao
-                    playerHealth.maxHealth = 5;
-                    healthUI.SetMaxHearts(5);
-                    playerHealth.SetCurrentHealth(5);
+                case RewardType.Experience: //adicionar 2 coracao
+                    playerHealth.maxHealth = 6;
+                    healthUI.SetMaxHearts(6);
+                    playerHealth.SetCurrentHealth(6);
                     break;
                 case RewardType.Custom: //pode ser cutscene (usada para receber lanca atualmente)
                     playerAnimator.SetBool("Arma", true);

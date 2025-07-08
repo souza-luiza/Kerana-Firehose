@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     public Transform[] teleportTargets; // posições dos níveis
     public GameObject gameOverScreen;
     public GameObject winScreen;
+    public GameObject howToPlayScreen;
+    public GameObject howToFireScreen;
 
     public static event Action OnReset;
 
@@ -66,5 +68,17 @@ public class GameController : MonoBehaviour
     public void MenuGame()
     {
         SceneManager.LoadScene("StartScene");
+    }
+
+    public void ExitHowToPlayScreen()
+    {
+        howToPlayScreen.SetActive(false);
+        PauseController.SetPause(false);
+    }
+
+    public void ExitHowToFireScreen()
+    {
+        howToFireScreen.SetActive(false);
+        PauseController.SetPause(false);
     }
 }

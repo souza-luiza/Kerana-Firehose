@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        PauseController.SetPause(true);
     }
 
     // Update is called once per frame

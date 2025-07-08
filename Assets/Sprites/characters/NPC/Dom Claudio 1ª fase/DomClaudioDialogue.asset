@@ -19,9 +19,13 @@ MonoBehaviour:
   - "Eu soube que a sua fam\xEDlia faleceu no inc\xEAndio..."
   - Sinto muito, estou aqui para o que precisar.
   - Gostava muito deles...
-  autoProgressLines: 01010101
+  autoProgressLines: 01010100
+  endDialoguesLines: 00000001
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: 1d55397718a24bd45b4e9a63fa83398d, type: 3}
   voicePitch: 1
   choices: []
+  questInProgressIndex: 0
+  questCompletedIndex: 0
+  quest: {fileID: 0}
