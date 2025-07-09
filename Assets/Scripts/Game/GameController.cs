@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
     void GameOverScreen()
     {
         gameOverScreen.SetActive(true);
+        DialogueController.Instance.EndDialogue();
         Time.timeScale = 0; //pausa o jogo completamente
     }
 

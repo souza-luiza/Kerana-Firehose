@@ -11,6 +11,7 @@ public class DialogueController : MonoBehaviour
     public Image portraitImage;
     public Transform choiceContainer;
     public GameObject choiceButtonPrefab;
+    public NPC currentNPC;
 
     void Awake()
     {
@@ -44,5 +45,13 @@ public class DialogueController : MonoBehaviour
         GameObject choiceButton = Instantiate(choiceButtonPrefab, choiceContainer);
         choiceButton.GetComponentInChildren<TMP_Text>().text = choiceText;
         choiceButton.GetComponent<Button>().onClick.AddListener(onClick);
+    }
+
+    public void EndDialogue()
+    {
+        if (currentNPC != null)
+        {
+            currentNPC.EndDialogue();
+        }
     }
 }
