@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,9 +26,19 @@ public class GameController : MonoBehaviour
 
     void GameOverScreen()
     {
+        StartCoroutine(ShowGameOverWithDelay());
+    }
+
+    IEnumerator ShowGameOverWithDelay()
+    {
         gameOverScreen.SetActive(true);
         DialogueController.Instance.EndDialogue();
-        Time.timeScale = 0; //pausa o jogo completamente
+        PauseController.SetPause(true);
+        yield return new WaitForSecondsRealtime(2.5f);
+        if (gameOverScreen.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
     }
 
     void WinScreen()
@@ -41,6 +52,7 @@ public class GameController : MonoBehaviour
         gameOverScreen.SetActive(false);
         SetLevel(CurrentLevel()); //trocar para outros niveis
         OnReset.Invoke();
+        PauseController.SetPause(false);
         Time.timeScale = 1;
     }
 
@@ -77,6 +89,7 @@ public class GameController : MonoBehaviour
         pausePanel.SetActive(false);
         howToPlayScreen.SetActive(true);
         PauseController.SetPause(true);
+        Time.timeScale = 1;
     }
 
     public void ExitHowToPlayScreen()

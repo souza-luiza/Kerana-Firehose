@@ -19,7 +19,13 @@ public class PausePanelController : MonoBehaviour
                 return;
             }
             pausePanel.SetActive(!pausePanel.activeSelf);
-            PauseController.SetPause(pausePanel.activeSelf);
+            if (pausePanel.activeSelf)
+            {
+                Time.timeScale = 0; //pausa o jogo completamente
+            }
+            else
+                Time.timeScale = 1;
+            //PauseController.SetPause(pausePanel.activeSelf);
         }
     }
 }

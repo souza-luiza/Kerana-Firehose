@@ -15,9 +15,10 @@ MonoBehaviour:
   npcName: Guarda
   npcPortrait: {fileID: 21300000, guid: bfb7cc311e5aa44459945e58ee8acb84, type: 3}
   dialogueLines:
-  - "Voc\xEA n\xE3o consegue acessar o portal sem completar a fase."
+  - "Se voc\xEA completou a fase, voc\xEA pode acessar o portal, sen\xE3o voc\xEA
+    n\xE3o consegue acessar o portal sem completar a fase."
   autoProgressLines: 
-  endDialoguesLines: 
+  endDialoguesLines: 01
   autoProgressDelay: 1.5
   typingSpeed: 0.05
   voiceSound: {fileID: 8300000, guid: f4167263ed2e0c9458b4d4a113f684a3, type: 3}

@@ -15,7 +15,8 @@ MonoBehaviour:
   npcName: Porteiro
   npcPortrait: {fileID: 21300000, guid: 0408b82158c75d247a9f042f9ba001f3, type: 3}
   dialogueLines:
-  - "Voc\xEA n\xE3o ir\xE1 conseguir passar sem completar todas miss\xF5es."
+  - "Se voc\xEA completou todas as miss\xF5es, pode passar! Sen\xE3o, voc\xEA n\xE3o
+    ir\xE1 conseguir passar sem completar todas miss\xF5es."
   autoProgressLines: 
   endDialoguesLines: 01
   autoProgressDelay: 1.5
