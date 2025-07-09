@@ -15,6 +15,9 @@ public class RewardsController : MonoBehaviour
     [SerializeField]
     private FogoPlayer fogoPlayer;
     public GameObject howToFireScreen;
+    public GameObject waypointPhase2;
+    public GameObject waypointPhase3;
+    public GameObject waypointPhase4;
 
     private void Awake()
     {
@@ -37,15 +40,18 @@ public class RewardsController : MonoBehaviour
                     fogoPlayer.enabled = true;
                     howToFireScreen.SetActive(true);
                     PauseController.SetPause(true);
+                    waypointPhase4.SetActive(true);
                     break;
-                case RewardType.Experience: //adicionar 2 coracao
-                    playerHealth.maxHealth = 6;
-                    healthUI.SetMaxHearts(6);
-                    playerHealth.SetCurrentHealth(6);
+                case RewardType.Experience: //adicionar 1 coracao
+                    playerHealth.maxHealth = 5;
+                    healthUI.SetMaxHearts(5);
+                    playerHealth.SetCurrentHealth(5);
+                    waypointPhase3.SetActive(true);
                     break;
                 case RewardType.Custom: //pode ser cutscene (usada para receber lanca atualmente)
                     playerAnimator.SetBool("Arma", true);
                     weapon.damage = 3;
+                    waypointPhase2.SetActive(true);
                     break;
             }
         }

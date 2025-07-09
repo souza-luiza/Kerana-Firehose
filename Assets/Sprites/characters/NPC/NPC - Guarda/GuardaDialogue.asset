@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c4ce7e0232acb4ebfed256327e71a2, type: 3}
+  m_Name: GuardaDialogue
+  m_EditorClassIdentifier: 
+  npcName: Guarda
+  npcPortrait: {fileID: 21300000, guid: bfb7cc311e5aa44459945e58ee8acb84, type: 3}
+  dialogueLines:
+  - "Voc\xEA n\xE3o consegue acessar o portal sem completar a fase."
+  autoProgressLines: 
+  endDialoguesLines: 
+  autoProgressDelay: 1.5
+  typingSpeed: 0.05
+  voiceSound: {fileID: 8300000, guid: f4167263ed2e0c9458b4d4a113f684a3, type: 3}
+  voicePitch: 1
+  choices: []
+  questInProgressIndex: 0
+  questCompletedIndex: 0
+  quest: {fileID: 0}

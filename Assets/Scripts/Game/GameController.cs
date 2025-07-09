@@ -10,6 +10,7 @@ public class GameController : MonoBehaviour
     public GameObject winScreen;
     public GameObject howToPlayScreen;
     public GameObject howToFireScreen;
+    public GameObject pausePanel;
 
     public static event Action OnReset;
 
@@ -69,6 +70,13 @@ public class GameController : MonoBehaviour
     public void MenuGame()
     {
         SceneManager.LoadScene("StartScene");
+    }
+
+    public void EnterHowToPlayScreen()
+    {
+        pausePanel.SetActive(false);
+        howToPlayScreen.SetActive(true);
+        PauseController.SetPause(true);
     }
 
     public void ExitHowToPlayScreen()

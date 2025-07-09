@@ -62,7 +62,7 @@ public class SoundEffectManager : MonoBehaviour
     {
         audioSource.volume = volume;
         randomPitchAudioSource.volume = volume;
-        voiceAudioSource.volume = volume;
+        voiceAudioSource.volume = volume*0.05f;
     }
 
     public void OnValueChanged()

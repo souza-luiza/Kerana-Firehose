@@ -20,7 +20,7 @@ MonoBehaviour:
   - "Aceita consegu\xED-lo?"
   - Encontre 4 bolas de fogos
   - "Est\xE3o espalhadas pelo mapa"
-  - "Boa derrota, ent\xE3o."
+  - "Voc\xEA n\xE3o conseguir\xE1 passar pelo portal, ent\xE3o."
   - "Voc\xEA consegue!"
   - "Boa sorte, acredito em voc\xEA!"
   autoProgressLines: 0101000100000000
